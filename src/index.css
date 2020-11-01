@@ -1,13 +1,128 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #F2F2F2;
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.Spacex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Filter {
+  flex-grow: 0;
+  flex-basis: 16%;
+  background: white;
+  padding: 11px;
+}
+
+.Spacexlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 84%;
+  height: fit-content;
+}
+.Button.active{
+  background: #79BB00;
+}
+.Button {
+  background: #c4e197;
+  margin: 4px;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 4px;
+  border: none;
+  flex-basis: 36%;
+  margin: 5px 0;
+  justify-content: space-between;
+}
+li {
+  font-size: 14px;
+  margin-left: 2em;
+}
+.Missions {
+  text-align: left;
+  margin-left: 15px;
+  margin-top: 12px;
+}
+.launch {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+article {
+  flex-basis: 22%;
+  text-align: center;
+  background: white;
+  margin: 0 15px 15px;
+}
+h1 {
+  font-size: 22px;
+  margin-bottom: 1em;
+  text-align: left;
+}
+.Filter h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #7980B0;
+  text-align: left;
+  margin-left: 1.5em;
+}
+.Filter h4 {
+  font-size: 12px;
+  margin: 10px 0 0px;
+  text-align: center;
+}
+.mission_patch {
+  width: 81%;
+  background: #F2F2F2;
+  margin: 10px auto;
+}
+.mission_patch img {
+  margin-top: 12px;
+  width: 75%;
+}
+.Spacexlist p {
+  text-align: left;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 15px 15px 15px 23px;
+}
+p.norecord{
+  width: 100%;
+  font-size: 23px;
+  text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .Spacex {
+    flex-direction: column;
+  }
+  article {
+    flex-basis: 45%;
+  }
+  section.Spacexlist {
+    margin-top: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .Spacex {
+    flex-direction: column;
+  }
+  article {
+    flex-basis: 100%;
+  }
+  section.Spacexlist {
+    margin-top: 8px;
+  }
 }
