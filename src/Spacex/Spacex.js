@@ -7,7 +7,6 @@ import Hoc from './Hoc'
 
 function Spacex() {
   const [ SpacexDate, getSpacexdata ] = useState();
-  console.log(SpacexDate)
   return (
     <Hoc>
       <div className="Spacex">
